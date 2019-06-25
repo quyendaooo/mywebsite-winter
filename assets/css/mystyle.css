@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFDEAE;
+    color: #9A0C19;
+}
+
+@media all and (max-width: 800px) {
+    #top-nav {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #top-nav {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+
+#topnav {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#topnav li {
+    display: block;
+    float: left;
+    margin-left: 2px;
+}
+
+#topnav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#topnav a.active {
+    background-color: #B2B3FB;
+}
+
+
+#topnav a:hover {
+    color: #e9967a;
+}
+
+#dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+#dropdown:hover .dropbtn {
+    color: #e9967a;
+}
+
+#dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#dropdown-content li {
+    display: block;
+    width: 160px;
+    float: left;
+    margin-left: 2px;
+}
+
+#dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+#dropdown-content a:hover {
+    color: #e9967a;
+}
+
+.intro {
+    max-width: 100%;
+    height: 400px;
+    background-image: url(../images/churchill-house-4_copy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.intro h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Lucida Console;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 150px;
+}
+
+.house {
+    max-width: 100%;
+    height: 400px;
+    background-image: url(../images/churchill-house-5-copy-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.house h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Lucida Console;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.robin {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/churchill-house-24.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.robin h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: Lucida Console;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 150px;
+    padding-right: 200px;
+    text-shadow: 3px 2px black;
+}
+
+.flex-item .statement {
+    max-width: 100%;
+    height: auto;
+    background-image: url(../images/churchill-house-13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Comic Sans MS;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .intro h1 {
+        font-size: 1.8em;
+    }
+
+    .house h1 {
+        font-size: 1.8em;
+    }
+
+    .robin h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .house h1 {
+        font-size: 1.8em;
+    }
+
+    .robin h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 1.3em;
+    }
+
+    .house h1 {
+        font-size: 1.8em;
+    }
+
+    .robin h1 {
+        font-size: 1.8em;
+    }
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    margin: 30px;
+    justify-content: center;
+}
+
+/*responsive image*/
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* logo social media */
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* color for each logo */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+.flex-container-left a {
+    text-decoration: none;
+    color: #E8443F;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.flex-container-middle a {
+    text-decoration: none;
+    color: #E8443F;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.flex-container-left a:hover {
+    color: #2D437B;
+}
+
+.flex-container-middle a:hover {
+    color: #2D437B;
+}
