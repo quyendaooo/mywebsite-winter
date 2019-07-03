@@ -277,6 +277,7 @@ footer {
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
 }
 
 .flex-item {
