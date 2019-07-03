@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #FFDEAE;
     color: #9A0C19;
+    font-family: Verdana, Geneva, sans-seriff;
 }
 
 @media all and (max-width: 800px) {
@@ -300,6 +301,7 @@ footer {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    display: inline;
 }
 
 /* hover effect */
@@ -344,4 +346,13 @@ footer {
 
 .flex-container-middle a:hover {
     color: #2D437B;
+}
+
+.copyright {
+    padding-left: 150px;
+    padding-top: 10px;
+}
+
+.source {
+    font-size: 15px;
 }
