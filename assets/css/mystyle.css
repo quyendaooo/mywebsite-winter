@@ -1,3 +1,4 @@
+/*css main content*/
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body {
     font-family: Verdana, Geneva, sans-seriff;
 }
 
+/*responsive navigation*/
 @media all and (max-width: 800px) {
     #top-nav {
         justify-content: space-around;
@@ -20,6 +22,7 @@ body {
     }
 }
 
+/*navigation*/
 ul {
     list-style: none;
     margin: 0;
@@ -120,45 +123,25 @@ ul {
     color: #e9967a;
 }
 
+/*heading image*/
 .intro {
     max-width: 100%;
-    height: 400px;
+    height: 250px;
     background-image: url(../images/churchill-house-4_copy.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
 
-.intro h1 {
-    color: black;
-    text-align: center;
-    font-size: 40px;
-    font-style: italic;
-    font-family: Lucida Console;
-    font-weight: bold;
-    margin: 0px;
-    padding-top: 150px;
-}
-
 .house {
     max-width: 100%;
-    height: 400px;
+    height: 250px;
     background-image: url(../images/churchill-house-5-copy-1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
 
-.house h1 {
-    color: black;
-    text-align: center;
-    font-size: 40px;
-    font-style: italic;
-    font-family: Lucida Console;
-    font-weight: bold;
-    margin: 0px;
-    padding-top: 100px;
-}
 
 .robin {
     width: 100%;
@@ -169,19 +152,7 @@ ul {
     background-attachment: fixed;
 }
 
-.robin h1 {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-style: italic;
-    font-family: Lucida Console;
-    font-weight: bold;
-    margin: 0px;
-    padding-top: 150px;
-    padding-right: 200px;
-    text-shadow: 3px 2px black;
-}
-
+/*css main item*/
 .flex-item .statement {
     max-width: 100%;
     height: auto;
@@ -191,18 +162,20 @@ ul {
     background-attachment: fixed;
 }
 
-
+/*css main content*/
 main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/*title*/
 h2 {
     font-family: Comic Sans MS;
     font-weight: bold;
     font-size: 40px;
 }
 
+/*sub title*/
 h3 {
     font-weight: bold;
     font-size: 30px;
@@ -216,53 +189,12 @@ h4 {
     text-align: center;
 }
 
+/*css footer*/
 footer {
     background-color: black;
     padding: 30px 30px 30px 30px;
     margin-bottom: 0px;
     color: white;
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .intro h1 {
-        font-size: 1.8em;
-    }
-
-    .house h1 {
-        font-size: 1.8em;
-    }
-
-    .robin h1 {
-        font-size: 1.8em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .intro h1 {
-        font-size: 1.5em;
-    }
-
-    .house h1 {
-        font-size: 1.8em;
-    }
-
-    .robin h1 {
-        font-size: 1.8em;
-    }
-}
-
-@media (max-width: 768px) {
-    .intro h1 {
-        font-size: 1.3em;
-    }
-
-    .house h1 {
-        font-size: 1.8em;
-    }
-
-    .robin h1 {
-        font-size: 1.8em;
-    }
 }
 
 .flex-container {
@@ -348,11 +280,13 @@ footer {
     color: #2D437B;
 }
 
+/*footer copyright*/
 .copyright {
     padding-left: 150px;
     padding-top: 10px;
 }
 
+/*source of RobinBoyd image*/
 .source {
     font-size: 10px;
 }
